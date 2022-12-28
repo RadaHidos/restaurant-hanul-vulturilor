@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hidoș Rada">
+    <meta name="keywords" content="Restaurant, preparate, mâncare, meniu, rezervare">
+    <meta name="description" content="Restaurantul Hanul Vulturilor este unul dintre cele mai adorate restaurante datorită preparatelor
+    speciale din carne de pasăre. Cei mai buni bucătari din lume își expun cele mai ingenioase
+    combinații de culori și arome pentru ca clienții noștri să fie mulțumiți de alegerea făcută de a
+    veni la restaurantul nostru.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurantul Hanul Vulturilor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,800;1,300&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--navbarul -->
+    <header class="navbar navbar-expand-lg bg-light sticky-top">
+        <nav class="container-xxl">
+            <a class="navbar-brand" href="index.html"><img src="imagini/eagle.png" alt="logo cu vultur"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav flex-column flex-md-row">
+                    <a class="nav-link" href="#despre">Despre noi</a>
+                    <a class="nav-link" href="#meniu">Meniu</a>
+                    <a class="nav-link" href="#blog">Blog</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--caruselul-->
+    <div class="container-fluid">
+        <div class="row mar-b">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="ratio ratio-21x9">
+                            <img src="imagini/rest.jpg" class="d-block w-100"
+                                alt="barul unui restaurant cu lumini și scaune">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="titlu-carusel">
+                                    <h1>Hanul Vulturilor</h1>
+                                </div>
+                                <div class="title">
+                                    <p>Restaurantul cu cele mai variate variante de răspuns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="ratio ratio-21x9">
+                            <img src="imagini/manc.jpg" class="d-block w-100"
+                                alt="farfurie cu mancare pe masă și o mână de femeie cu unghii roșii care o ține">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="titlu-carusel">
+                                    <p>Hanul Vulturilor</p>
+                                </div>
+                                <div class="title">
+                                    <p>Restaurantul în care poți testa cele mai nebunești gusturi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="ratio ratio-21x9">
+                            <img src="imagini/mana.jpg" class="d-block w-100"
+                                alt="mâinile unui bucătar care țin un cuțit care taie ardei verde">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="titlu-carusel">
+                                    <p>Hanul Vulturilor</p>
+                                </div>
+                                <div class="title">
+                                    <p>Restaurantul care face pe plac tuturor artiștilor și nu numai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="ratio ratio-21x9">
+                            <img src="imagini/tacam.jpg" class="d-block w-100"
+                                alt="masă aranjată cu pahare și farfurii afară">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="titlu-carusel">
+                                    <p>Hanul Vulturilor</p>
+                                </div>
+                                <div class="title">
+                                    <p>Restaurantul în care te vei simți apreciat și mulțumit în totalitate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="ratio ratio-21x9">
+                            <img src="imagini/sebi.jpg" class="d-block w-100"
+                                alt="mâinile unui bucătar care ține o oală cu sos în mână i face plaiting pe 4 farfurii">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="titlu-carusel">
+                                    <p>Hanul Vulturilor</p>
+                                </div>
+                                <div class="title">
+                                    <p>Restaurantul plin de voie bună și evenimente încântătoare</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--id-ul pt desppre noi-->
+            <div class="text">
+                <p id="despre">despre noi</p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <!--Despre noi-->
+    <div class="container">
+        <div class="row mar-y">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <div class="subtitlu">
+                    <h2> Despre noi</h2>
+                </div>
+                <div class="minititlu">
+                    <h3>Tradiția continuă din 1989</h3>
+                </div>
+                <div class="continut">
+                    <p>Toate produsele noastre sunt preparate cu multă atenție de către cei mai îndrăgiți bucătari
+                        români. Mâncarea tradițională este specialitatea cu care suntem foarte încântați să vă mulțumim.
+                    </p>
+                    <p><strong>Preparatele</strong> noastre sunt pregătite doar din carne de pasăre precum pui, rață,
+                        curcan, bibilică, emu sau struț. Dorim să ne diferențiem fată de alte restaurante prin
+                        diversitatea de gusturi întâlnite în fiecare farfurie</p>
+                    <p><strong>Gustul</strong> nostru specific este dat și de prospețimea ingredientelor, astfel că la
+                        Hanul Vulturilor vom folosi produse sezoniere pentru cele mai bune rezultate. Ne place mult ceea
+                        ce facem, iar din acest motiv în cadrul restaurantului se organizeaza o mulțime de evenimente
+                        pentru a încuraja întâlnirile și voia bună a persoanelor</p>
+                </div>
+                <div class="center">
+                    <a href="https://divainbucatarie.ro/2012/09/22/retete-culinare-cu-carne-de-pui/"
+                        target="_blank"><button type="button" class="btn btn-outline-warning">Mai multe despre
+                            noi</button></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 center">
+                <div class="corect center">
+                    <img src="imagini/pui.jpg"
+                        alt="pui prăjit în tigaie cu tacâmuri lângă și frunze verzi de pătrunjel puse pe un doc de lemn">
+                </div>
+            </div>
+            <!--id-ul pt meniu-->
+            <div class="text">
+                <p id="meniu">meniu specialitati</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Meniu cu specialități-->
+    <div class="container">
+        <div class="row mar-y">
+            <div class="col-12">
+                <div class="subtitlu">
+                    <h2>Specialitățile săptămânii</h2>
+                </div>
+                <div class="minititlu">
+                    <h3>Nu știi ce să mănânci? Iată câteva oferte care ar putea să îți placă!</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row mar-y">
+            <div class="col-sm-12 col-lg-3 col-md-6 ">
+                <div class="continut1">
+                    <h4>Paste cu sos pesto și carne de pui <span class="badge bg-secondary">-15%</span></h4>
+                </div>
+                <div class="responsive center">
+                    <img src="imagini/pastaaaa.jpg" alt="farfurie cu paste si sos de roșii pe un fundal alb cu roz">
+                </div>
+                <div class="responsive continut">
+                    <p><strong>Ingrediente:</strong> paste făinoase, sos pesto, piept de pui, roșii, busuioc, parmezan
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 ">
+                <div class="continut1">
+                    <h4>Burger cu carne de curcan <span class="badge bg-secondary">1+1 gratis</span></h4>
+                </div>
+                <div class="responsive center">
+                    <img src="imagini/burger.jpg" alt="burger mare pus pe farfurie cu carne roșii și multă brânză">
+                </div>
+                <div class="responsive continut">
+                    <p><strong>Ingrediente:</strong> chiflă cu susan, carne de curcan prajită, roșii, salată, sos de
+                        maioneză, brânză ceddar</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 ">
+                <div class="continut1">
+                    <h4>Burrito cu carne de struț <span class="badge bg-secondary">-20%</span></h4>
+                </div>
+                <div class="responsive center">
+                    <img src="imagini/burrito.jpg"
+                        alt="mână care ține un burrito cu carne salata și porumb pe un fundal verde care arată ca iarba">
+                </div>
+                <div class="responsive continut">
+                    <p><strong>Ingrediente:</strong> lipie din făină integrală, sos de usturoi, cartoffi prăjiți, roșii,
+                        carne de struț prăjită, varză, porumb, fasole</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 ">
+                <div class="continut1">
+                    <h4>Supă de pui cu legume caramelizate <span class="badge bg-secondary">-10%</span></h4>
+                </div>
+                <div class="responsive center">
+                    <img src="imagini/soup.jpg"
+                        alt="bol cu supă portocaalite pe un doc de lemn cu un polonic mic lângă">
+                </div>
+                <div class="responsive continut">
+                    <p><strong>Ingrediente:</strong> apă, carne de pui fiartă, ardei, fasole verde, bulion, pătrunjel,
+                        orez
+                    </p>
+                </div>
+            </div>
+
+            <!--id-ul pt blog-->
+            <div class="text">
+                <p id="blog">blog</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Blogul-->
+    <div class="container">
+        <div class="row mar-y">
+            <div class="col-12">
+                <div class="subtitlu">
+                    <h2>Blog</h2>
+                </div>
+            </div>
+        </div>
+        <!--carduri-->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mar-y">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="center">
+                        <img src="imagini/ella.jpg" class="card-img-top"
+                            alt="femeie care zâmbește în timp ce învârte cu lingura într-o oală de supă în bucătăria ei">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ella Mark</h3>
+                        <div class="center">
+                            <span class="badge text-bg-warning">40 ani</span>
+                        </div>
+                        <p class="card-text continut1">Grațioasă, atentă și foarte îndemânatică, colega noastră Ella
+                            Mark și-a croit
+                            drumul în echipa hanului prin pasiunea ei pentru specialitățile exotice. Ea este chef în
+                            bucătăria noastră, reușind să conducă cu multă răbdare și încredere afacerea spre câștiguri
+                            mărețe. </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Ella Mark - chef din anul 2010</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="center">
+                        <img src="imagini/turnic.jpg" class="card-img-top"
+                            alt="bucătar cu păr lung și barbă care învârte cu lingura într-o oală de inox">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Turnik Papar</h3>
+                        <div class="center">
+                            <span class="badge text-bg-warning">30 ani</span>
+                        </div>
+                        <p class="card-text continut1">Unul dintre cei mai buni bucătari din întreaga lume încântă
+                            clienții noștri cu rețetele inedite din carne de struț. Aceasta este specializarea lui
+                            Turnik Papar, omul de bază în industria cărnilor de pasăre exotică.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Turnik Papar - specialist în carne de pasăre exotică</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="center">
+                        <img src="imagini/MuLou.jpg" class="card-img-top"
+                            alt="bucătar cu coif alb ascuțit care stă rezemat cu cotul de platoul de lemn al unui bar zâmbind">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mu Lou</h3>
+                        <div class="center">
+                            <span class="badge text-bg-warning">45 ani</span>
+                        </div>
+                        <p class="card-text continut1">Omul care a reușit să transforme Hanul Vulturilor într-un loc
+                            minunat, plin
+                            de personal îndragit de clienți, dar mai ales care a introdus arta în preparatele noastre.
+                            Mu Lou, urmașul lui Li Ong, întemeitorul acestui restaurant, completează constant gusturile
+                            preparatelor, în așa fel încât și culorile încep să transmită un gust plăcut. </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Mu Lou - artist culinar</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mar-y">
+            <div class="col-sm-12 col-md-6 col-lg-8">
+                <div class="minititlu">
+                    <h3>Evenimente și premii câștigate</h3>
+                </div>
+            </div>
+        </div>
+        <!--continut blog-->
+        <div class="row mar-y">
+            <div class="col-12">
+                <div class="continut">
+                    <p>Restaurantul Hanul Vulturilor este unul dintre cele mai adorate restaurante datorită preparatelor
+                        speciale din carne de pasăre. Cei mai buni bucătari din lume își expun cele mai ingenioase
+                        combinații de culori și arome pentru ca clienții noștri să fie mulțumiți de alegerea făcută de a
+                        veni la restaurantul nostru.</p>
+
+                    <p>Unul dintre cele mai importante motive pentru care considerăm că restaurantul nostru este unul
+                        dintre cele mai bune este că toate preparatele sunt pregătite cu foarte mare atenție, iar
+                        ingredientul secret care se întâlnește peste tot în restaurant este iubirea și respectul față de
+                        cluenți și staff. În plus, ne asumăm în totalitate responsabilitatea de a curăța constant
+                        bucătăria și interiorul restaurantului pentru o bună igienă.</p>
+
+                    <p>Totodată, pentru a ne demonstra autenticitatea, ne luăm din timpul și energia noastră pentru a
+                        v-o dărui vouă, clienților, prin evenimente, de exemplu, petreceri sau adunări caritabile pentru
+                        diferite cazuri considerabile. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="continut">
+                    <h4>De trei ori locul I</h4>
+                </div>
+            </div>
+        </div>
+        <!--acordeon-->
+        <div class="row mar-y">
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Anul 2015 - Concursul Mondial de Preparate din Carne de
+                                Pasăre
+                            </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="continut1">
+                                    <p>După apariția chef-ului Mu Lou restaurantul a ajuns la un nivel neașteptat,
+                                        câștigând în 2015 LOCUL I la <strong>Concursul Mondial de Preparate din Carne de
+                                            Pasăre</strong>
+                                        cu friptura sa faimoasă de bibilică cu legume caramelizate și sos de arahide
+                                        fierte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Anul 2019 - Concursul Internațional de Artă Culinară
+                            </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <div class="continut1">
+                                    <p>În anul 2019 a participat cu salata preferată a mentorului său, Li Ong la
+                                        <strong>Concursul Internațional de Artă Culinară</strong> unde a câștigat din
+                                        nou LOCUL I.
+                                        Premiul a fost donat unei case de copii unde Li Ong obișnuia să meargă să
+                                        gătească din propria plăcere pentru a face copii mai fericiți.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Anul 2020 - Concursul Pentru cea mai Unită Echipă
+                            </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <div class="continut1">
+                                    <p>Anul 2020 a fost o suriză plăcută pentru toți fanii lui Mu Lou, deoarece a
+                                        câștiga din nou LOCUL I la <strong>Concursul Pentru cea mai Unită
+                                            Echipă</strong> unde a
+                                        participat alături de echipa sa, și anume Ella Mark, Peter Kowski, Turnik Papar,
+                                        Charlie Moob. Atunci Mu Lou a susținut că "cel mai important lucru când vine
+                                        vorba de pregătit preparate uimitoare sunt oamenii care te înconjoară".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="center corect">
+                    <img src="imagini/vultur.jpg" alt="trofeu de aur în formă de vultur pe o masă albă">
+                </div>
+            </div>
+            <!--id-ul pt contact-->
+            <div class="text">
+                <p id="contact"></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row mar-y">
+            <div class="col-12">
+                <div class="subtitlu">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mt-5">
+                <ul>
+                    <li>SC Restaurant Hanul Vulturilor SRL</li>
+                    <li>Târgu Mureș</li>
+                    <li>Bulevardul Olga Silomnu nr. 908</li>
+                    <li>Tel: 0765 467 889 / 0344 786 690</li>
+                    <li>Email: hanul@vulturilor.ro</li>
+                    <li>www.hanul-vulturilor.ro</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="corect center">
+                    <img src="imagini/echipa.jpg"
+                        alt="echipă de bucătari de la brâu în jos care pregătesc mai multe farfurii cu mâncare. Unul dintre bucătari presară ingrediente pe farfurie">
+                </div>
+            </div>
+        </div>
+        <div class="row mar-y">
+            <div class="col-sm-12 col-md-6">
+                <div class="corect center">
+                    <img src="imagini/pahare.jpg"
+                        alt="masă aranjate cu câte un pahar de vin și unul de apă și câte un șervețel pe mese de câte două persoane">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="minititlu mar-y">
+                    <h3>Program</h3>
+                </div>
+                <ol>
+                    <li>Luni: 7<sup>00</sup>-00<sup>00</sup></li>
+                    <li>Marți: 7<sup>00</sup>-00<sup>00</sup></li>
+                    <li>Miercuri: 7<sup>00</sup>-00<sup>00</sup></li>
+                    <li>Joi: 7<sup>00</sup>-00<sup>00</sup></li>
+                    <li>Vineri: 7<sup>00</sup>-3<sup>00</sup></li>
+                    <li>Sâmbătă: 10<sup>00</sup>-3<sup>00</sup></li>
+                    <li>Duminică: 10<sup>00</sup>-2<sup>00</sup></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--footer-->
+    <footer class="main-footer ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <a href="index.html" class="logo"><img src="imagini/eagle.png" alt="logo cu vultur"></a>
+                    <p>sunați-ne: 0765 467 889 / 0344 786 690</p>
+                    <p>&copy; 2009 | By <strong>Hanul Vulturilor</strong> - all rights reserved</p>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="minititlu">
+                        <p>Social media:</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/tweeter" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
